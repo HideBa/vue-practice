@@ -5,9 +5,13 @@
   <div v-else>no text here</div>
   <input type="text" v-model="msg"/>
   <button @click="clear()">click here</button>
+  <Counter />
+  <br/>
+  
 </template>
 
 <script>
+  import Counter from "./components/Counter";
 
 export default {
   data() {
@@ -17,6 +21,9 @@ export default {
   },
   methods: {
     clear: function(){ this.msg = "" }
+  },
+  components: {
+    Counter
   }
 }
 </script>
