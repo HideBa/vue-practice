@@ -15,45 +15,21 @@ rules:
   prettier/prettier: warn
 overrides:
   - files:
-      - '*.js'
-      # - '*.vue'
+    - '*.js'
+    - '*.vue'
     parserOptions:
       sourceType: module
   # - files:
   #   - "*.vue"
   #   extends:
-  #     - "plugin:vue/essential"
-  #     - "@vue/prettier"
+  #     - plugin:vue/vue3-recommended
+  #     # - "@vue/prettier"
+  #   plugins:
+  #     - vue
+  #   parser: vue-eslint-parser
   #   parserOptions:
+  #     parser: babel-eslint
+  #     sourceType: module
   #     ecmaVersion: 2020
-
-#     env:
-#       browser: true
-#       commonjs: true
-#       node: false
-#     plugins:
-#       - vue
-#     extends:
-#       - plugin:vue/essential
-#       - '@vue/prettier'
-#     rules:
-#       'explicit-function-return-type': 'off'
-#       'explicit-module-boundary-types': 'off'
-#       'interface-name-prefix': 'off'
-#       'no-explicit-any': 'off'
-#       'no-unused-vars':
-#         - 'error'
-#         - argsIgnorePattern: '^_'
-#           varsIgnorePattern: '^_'
-#       'no-use-before-define': 'off'
-#       'prefer-optional-chain': warn
-#       'ban-types': [
-#         'error',
-#         {
-#           'extendDefaults': true,
-#           'types': {
-#             '{}': false
-#           }
-#         }
-#       ]
-#       no-undef: 'off'
+  #     ecmaFeatures:
+  #       jsx: true

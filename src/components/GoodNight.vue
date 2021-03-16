@@ -1,14 +1,12 @@
 <template>
-<div>Good night {{ name }}</div>
+  <div>Good night {{ name }}</div>
 </template>
 
 <script>
-
 export default {
   name: "GoodNight",
   props: {
-    name: String
-  }
-}
+    name: String,
+  },
+};
 </script>
-

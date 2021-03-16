@@ -1,29 +1,34 @@
 <template>
   <div v-if="msg.length > 0">
-    <p>{{msg}}</p>
+    <p>{{ msg }}</p>
   </div>
   <div v-else>no text here</div>
-  <input type="text" v-model="msg"/>
+  <input
+v-model="msg" type="text" />
   <button @click="clear()">click here</button>
   <Counter />
-  <br/>
-  
+  <TaskList />
+  <br>
 </template>
 
 <script>
-  import Counter from "./components/Counter";
+import Counter from "./components/Counter";
+import TaskList from "./components/TaskList";
 
 export default {
+  components: {
+    Counter,
+    TaskList,
+  },
   data() {
     return {
       msg: "Hello World",
-    }
+    };
   },
   methods: {
-    clear: function(){ this.msg = "" }
+    clear: function () {
+      this.msg = "";
+    },
   },
-  components: {
-    Counter
-  }
-}
+};
 </script>
